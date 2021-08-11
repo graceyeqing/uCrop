@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radiogroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="62dp"
+    android:paddingRight="62dp">
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/select_crop_1_1"
+        android:orientation="vertical"
+        android:button="@null"
+        android:text="1:1"
+        android:textColor="@color/select_radio_color"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:checked="true"
+        android:layout_gravity="center_vertical"/>
+    <RadioButton
+        android:id="@+id/radio2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/select_crop_3_4"
+        android:orientation="vertical"
+        android:button="@null"
+        android:text="3:4"
+        android:textColor="@color/select_radio_color"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"/>
+    <RadioButton
+        android:id="@+id/radio3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/select_crop_16_9"
+        android:orientation="vertical"
+        android:button="@null"
+        android:text="16:9"
+        android:textColor="@color/select_radio_color"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"/>
+
+</RadioGroup>
+

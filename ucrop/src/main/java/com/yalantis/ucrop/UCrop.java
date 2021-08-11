@@ -129,6 +129,10 @@ public class UCrop {
         start(activity, REQUEST_CROP);
     }
 
+    public void startRatio(@NonNull Activity activity) {
+        startRatio(activity, REQUEST_CROP);
+    }
+
     /**
      * Send the crop Intent from an Activity with a custom request code
      *
@@ -137,6 +141,10 @@ public class UCrop {
      */
     public void start(@NonNull Activity activity, int requestCode) {
         activity.startActivityForResult(getIntent(activity), requestCode);
+    }
+
+    public void startRatio(@NonNull Activity activity, int requestCode) {
+        activity.startActivityForResult(getIntentRatio(activity), requestCode);
     }
 
     /**
@@ -185,6 +193,12 @@ public class UCrop {
      */
     public Intent getIntent(@NonNull Context context) {
         mCropIntent.setClass(context, UCropActivity.class);
+        mCropIntent.putExtras(mCropOptionsBundle);
+        return mCropIntent;
+    }
+
+    public Intent getIntentRatio(@NonNull Context context) {
+        mCropIntent.setClass(context, UCropRatioActivity.class);
         mCropIntent.putExtras(mCropOptionsBundle);
         return mCropIntent;
     }
