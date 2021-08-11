@@ -451,6 +451,10 @@ public class UCropRatioActivity extends AppCompatActivity {
             aspectRatioList.add(new AspectRatio(null, 16, 9));
 //        }
 
+        mGestureCropImageView.setTargetAspectRatio(
+                aspectRatioList.get(0).getRatio());
+        mGestureCropImageView.setImageToWrapCropBounds();
+
 //        LinearLayout wrapperAspectRatioList = findViewById(R.id.layout_aspect_ratio);
 
 //        FrameLayout wrapperAspectRatio;
