@@ -238,7 +238,8 @@ public class SampleActivity extends BaseActivity implements UCropFragmentCallbac
         if (requestMode == REQUEST_SELECT_PICTURE_FOR_FRAGMENT) {       //if build variant = fragment
             setupFragment(uCrop);
         } else {                                                        // else start uCrop Activity
-            uCrop.start(SampleActivity.this);
+//            uCrop.start(SampleActivity.this);
+            uCrop.startRatio(SampleActivity.this);
         }
 
     }
