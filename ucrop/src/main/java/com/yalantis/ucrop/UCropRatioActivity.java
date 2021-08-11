@@ -273,7 +273,8 @@ public class UCropRatioActivity extends AppCompatActivity {
             mGestureCropImageView.setTargetAspectRatio(aspectRatioList.get(aspectRationSelectedByDefault).getAspectRatioX() /
                     aspectRatioList.get(aspectRationSelectedByDefault).getAspectRatioY());
         } else {
-            mGestureCropImageView.setTargetAspectRatio(CropImageView.SOURCE_IMAGE_ASPECT_RATIO);
+//            mGestureCropImageView.setTargetAspectRatio(CropImageView.SOURCE_IMAGE_ASPECT_RATIO);
+            mGestureCropImageView.setTargetAspectRatio(1f);
         }
 
         // Result bitmap max size options
@@ -450,10 +451,6 @@ public class UCropRatioActivity extends AppCompatActivity {
 //            aspectRatioList.add(new AspectRatio(null, 3, 2));
             aspectRatioList.add(new AspectRatio(null, 16, 9));
 //        }
-
-        mGestureCropImageView.setTargetAspectRatio(
-                aspectRatioList.get(0).getRatio());
-        mGestureCropImageView.setImageToWrapCropBounds();
 
 //        LinearLayout wrapperAspectRatioList = findViewById(R.id.layout_aspect_ratio);
 
